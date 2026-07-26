@@ -1,5 +1,7 @@
 # Deployment
 
+**English** | [简体中文](deployment.zh-CN.md)
+
 ## Requirements
 
 - Node.js 20 or later

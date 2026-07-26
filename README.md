@@ -1,5 +1,7 @@
 # Cloudflare Mailgun Webmail
 
+**English** | [简体中文](README.zh-CN.md)
+
 A lightweight, multi-account webmail application running on Cloudflare Workers, D1, and R2. Mailgun is the primary mail provider; Cloudflare Email Routing and Email Sending are planned as first-class alternatives.
 
 > The UI is currently Chinese-first. Contributions for localization and provider abstraction are welcome.
