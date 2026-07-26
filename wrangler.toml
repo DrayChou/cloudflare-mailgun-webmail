@@ -1,0 +1,24 @@
+name = "cloudflare-mailgun-webmail"
+main = "src/index.ts"
+compatibility_date = "2026-07-25"
+workers_dev = true
+preview_urls = false
+
+[vars]
+INITIAL_EMAIL = "admin@example.com"
+MAILGUN_API_BASE = "https://api.mailgun.net"
+MAILGUN_POLL_ENABLED = "true"
+SESSION_TTL_DAYS = "30"
+
+[[d1_databases]]
+binding = "MAIL_DB"
+database_name = "cloudflare-mailgun-webmail"
+database_id = "replace-with-your-d1-database-id"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "MAIL_BUCKET"
+bucket_name = "cloudflare-mailgun-webmail"
+
+[triggers]
+crons = ["*/5 * * * *"]

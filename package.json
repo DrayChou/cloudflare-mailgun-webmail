@@ -1,0 +1,29 @@
+{
+  "name": "cloudflare-mailgun-webmail",
+  "version": "0.1.0",
+  "description": "Lightweight multi-account webmail on Cloudflare Workers, D1, R2, and Mailgun",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrayChou/cloudflare-mailgun-webmail.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "db:local": "wrangler d1 migrations apply MAIL_DB --local",
+    "db:remote": "wrangler d1 migrations apply MAIL_DB --remote"
+  },
+  "dependencies": {
+    "postal-mime": "^2.7.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260724.1",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.114.0"
+  }
+}

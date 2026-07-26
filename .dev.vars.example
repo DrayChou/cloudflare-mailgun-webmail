@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local development. Never commit .dev.vars.
+INITIAL_PASSWORD=replace-with-a-long-random-password
+MAILGUN_API_KEY=replace-with-mailgun-private-api-key
+MAILGUN_SIGNING_KEY=replace-with-mailgun-http-webhook-signing-key
